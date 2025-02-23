@@ -28,8 +28,8 @@ torch.manual_seed(42)
 
 path = Path('data/')
 
-train_df = pd.read_csv(path/'train.csv',index_col='id')
-test_df = pd.read_csv(path/'test.csv',index_col='id')
+train_df = pd.read_csv(path/'train.csv')
+test_df = pd.read_csv(path/'test.csv')
 #sub_df = pd.read_csv(path/'sample_submission.csv')
 
 cont_names,cat_names = cont_cat_split(train_df, dep_var='Sales')
